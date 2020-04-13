@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.shape_container{
+    position: relative;
+    height: 550px;
+    width: 400px;
+}
+
+.shape{
+    display: flex;
+    flex-direction: column;
+    background: #4787c9;
+    height: 550px;
+    width: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 5px 14px rgba(9, 33, 58, 0,1);
+    transform: skewX(-5deg) skewY(-5deg);
+}
+
+.customer_picture{
+    height: 50%;
+    overflow: hidden;
+    transform: skewX(5deg) skewY(5deg) scale(1.12);
+}
+
+.customer_picture img{
+    height: 100%;
+}
+
+h1 {
+    font-family: "Hind", sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-family: "Hind", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    color: #f4f4f4;
+    padding: 40px 20px;
+    transform: skewX(5deg) skewY(5deg)
+}
+
+.logo{
+    margin-bottom: 10px;
+}
+
+.shape_shadow{
+    position: absolute;
+    top: 10;
+    left: 10;
+    height: 550px;
+    width:400px;
+    background: #f0f7ff;
+    border-radius: 30px;
+    z-index: -10;
+    transform: skewX(-5deg) skewY(-5deg)rotate(-20deg);
+}
+
+
